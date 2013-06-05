@@ -1,1 +1,1 @@
-My dotfiles and plugins.
+My toolkit including dotfiles, plugins and scripts.
