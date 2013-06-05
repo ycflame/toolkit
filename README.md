@@ -1,4 +1,1 @@
-dotfiles
-========
-
-My dotfiles and plugins
+My dotfiles and plugins.
