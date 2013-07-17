@@ -7,7 +7,7 @@ filetype plugin indent on
 set pastetoggle=<F5>
 map <F6> :set number!<CR>
 
-map <F12> :call RunSrc()<CR>
+map <F7> :call RunSrc()<CR>
 "定义RunSrc()
 func RunSrc()
 exec "w"
