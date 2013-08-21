@@ -6,6 +6,7 @@ set nu
 syntax on
 filetype plugin indent on
 set colorcolumn=81
+highlight ColorColumn ctermbg=DarkGray
 
 set pastetoggle=<F5>
 map <F6> :set number!<CR>
