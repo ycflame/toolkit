@@ -5,6 +5,7 @@ set smarttab
 set nu
 syntax on
 filetype plugin indent on
+set colorcolumn=80
 
 set pastetoggle=<F5>
 map <F6> :set number!<CR>
