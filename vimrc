@@ -5,10 +5,10 @@ set smarttab
 set nu
 syntax on
 filetype plugin indent on
-set colorcolumn=8
-highlight ColorColumn ctermbg=Gray
+set colorcolumn=80
+highlight ColorColumn ctermbg=DarkGray
 set cursorcolumn
-highlight CursorColumn ctermbg=Gray
+highlight CursorColumn ctermbg=DarkGray
 
 set pastetoggle=<F5>
 map <F6> :set number!<CR>
