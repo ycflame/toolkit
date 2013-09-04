@@ -9,6 +9,7 @@ set colorcolumn=80
 highlight ColorColumn ctermbg=DarkGray
 set cursorcolumn
 highlight CursorColumn ctermbg=DarkGray
+set hls
 
 set pastetoggle=<F5>
 map <F6> :set number!<CR>
