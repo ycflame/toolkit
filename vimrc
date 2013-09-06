@@ -2,13 +2,22 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+
+" Show line number
 set nu
+
 syntax on
 filetype plugin indent on
+
+" Highlight the 80th column as max line length
 set colorcolumn=80
 highlight ColorColumn ctermbg=DarkGray
+
+" Highlight the column cursor stands for indent checking 
 set cursorcolumn
 highlight CursorColumn ctermbg=DarkGray
+
+" Highlight searched text
 set hls
 
 set pastetoggle=<F5>
@@ -32,13 +41,11 @@ exec "!astyle --style=java --suffix=none %"
 endif
 exec "e! %"
 endfunc
-" End of RunSrc()
 
 " Define Pylint()
 func Pylint()
 exec "!pylint %"
 endfunc
-" End of Pylint()
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
