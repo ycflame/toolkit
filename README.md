@@ -11,3 +11,5 @@ plugin list:
     syntax highlight
 * SimpylFold
     code folding
+* NERDTree
+    browse files in project fold
