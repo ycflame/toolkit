@@ -24,6 +24,7 @@ highlight CursorColumn ctermbg=DarkGray
 " Highlight searched text
 set hls
 
+map <F4> :NERDTreeToggle<CR>
 set pastetoggle=<F5>
 map <F6> :set number!<CR>
 map <F7> :call RunSrc()<CR>
