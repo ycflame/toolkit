@@ -19,3 +19,5 @@ plugin in beta:
 * pydiction
 * SnipMate
 * neocomplcache & neocomplete
+* YouCompleteMe & jedi-vim
+* PEP8
