@@ -1,3 +1,7 @@
+" Load pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
