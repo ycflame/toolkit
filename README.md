@@ -13,3 +13,9 @@ plugin list:
     code folding
 * NERDTree
     browse files in project fold
+
+plugin in beta:
+* taglist
+* pydiction
+* SnipMate
+* neocomplcache & neocomplete
