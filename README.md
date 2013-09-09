@@ -2,24 +2,19 @@ My toolkit including dotfiles, plugins and scripts.
 
 plugin list:
 * pathogen
->plugin manager
+> plugin manager
 * supertab 
->auto-complete
+> auto-complete
 * MRU 
-
-    recent opened file list
+> recent opened file list
 * python.vim 
-
-    syntax highlight
+> syntax highlight
 * SimpylFold
-
-    code folding
+> code folding
 * NERDTree
-
-    browse files in project fold
+> browse files in project fold
 * flake8
-
-    static syntax and PEP8 checker
+> static syntax and PEP8 checker
 
 plugin in beta:
 * taglist
