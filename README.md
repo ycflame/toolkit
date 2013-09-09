@@ -1,20 +1,35 @@
 My toolkit including dotfiles, plugins and scripts.
 
 plugin list:
-* pathogen
-    * plugin manager
-* supertab 
-    * auto-complete
-* MRU 
-    * recent opened file list
-* python.vim 
-    * syntax highlight
-* SimpylFold
-    * code folding
-* NERDTree
-    * browse files in project fold
-* flake8
-    * static syntax and PEP8 checker
+<table>
+<tr>
+    <td>pathogen</td>
+    <td>plugin manager</td>
+</tr>
+<tr>
+    <td>supertab</td>
+    <td>auto-complete</td>
+</tr>
+<tr>
+    <td>MRU</td>
+    <td>recent opened file list</td>
+</tr>
+<td>python.vim</td>
+<td>syntax highlight</td>
+</tr>
+<tr>
+<td>SimpylFold</td>
+<td>code folding</td>
+</tr>
+<tr>
+<td>NERDTree</td>
+<td>browse files in project fold</td>
+</tr>
+<tr>
+<td>flake8</td>
+<td>static syntax and PEP8 checker</td>
+</tr>
+</table>
 
 plugin in beta:
 * taglist
