@@ -14,22 +14,30 @@ syntax on
 filetype on
 filetype plugin indent on
 
-" Highlight the 80th column as max line length
+" Highlight the 80th column as max line length and set color
 set colorcolumn=80
 highlight ColorColumn ctermbg=DarkGray
 
-" Highlight the column cursor stands for indent checking 
+" Highlight the column cursor stands for indent checking and set color
 set cursorcolumn
 highlight CursorColumn ctermbg=DarkGray
 
 " Highlight searched text
 set hls
 
+" Toggle NERDTree window
 map <F4> :NERDTreeToggle<CR>
+
+" Toggle paste mode
 set pastetoggle=<F5>
+
+" Toggle line number
 map <F6> :set number!<CR>
-map <F7> :call RunSrc()<CR>
-map <F8> :call Pylint()<CR>
+
+" Reserve F7 to run flake8
+
+" Run current script
+map <F8> :call RunSrc()<CR>
 
 " Define RunSrc()
 func RunSrc()
@@ -48,11 +56,6 @@ endif
 exec "e! %"
 endfunc
 
-" Define Pylint()
-func Pylint()
-exec "!pylint %"
-endfunc
-
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -65,7 +68,7 @@ set viminfo^=%
 function! HasPaste()
     if &paste
         return 'PASTE MODE  '
-    en
+    endif
     return ''
 endfunction
 

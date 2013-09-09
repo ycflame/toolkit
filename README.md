@@ -13,6 +13,8 @@ plugin list:
     code folding
 * NERDTree
     browse files in project fold
+* flake8
+    static syntax and PEP8 checker
 
 plugin in beta:
 * taglist
@@ -20,4 +22,4 @@ plugin in beta:
 * SnipMate
 * neocomplcache & neocomplete
 * YouCompleteMe & jedi-vim
-* PEP8
+* PyUnit
