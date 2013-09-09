@@ -1,6 +1,7 @@
 My toolkit including dotfiles, plugins and scripts.
 
 plugin list:
+
 1. [pathogen](https://github.com/tpope/vim-pathogen)
     * plugin manager
 2. [supertab](https://github.com/ervandew/supertab)
