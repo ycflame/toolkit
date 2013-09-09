@@ -9,7 +9,7 @@ plugin list:
     auto-complete
 * MRU 
 
-    recent opend file list
+    recent opened file list
 * python.vim 
 
     syntax highlight
