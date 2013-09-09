@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cp vimrc ~/.vimrc
-cp -R vim/* ~/.vim
+rsync -rtvu --delete --exclude '.git' vim/ ~/.vim/
