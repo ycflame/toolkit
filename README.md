@@ -2,8 +2,13 @@ My toolkit including dotfiles, plugins and scripts.
 
 plugin list:
 
-1. [pathogen](https://github.com/tpope/vim-pathogen)
-    * plugin manager
+<table>
+<tr>
+   <td>[pathogen](https://github.com/tpope/vim-pathogen)</td>
+   <td>plugin manager</td>
+</tr>
+</table>
+
 2. [supertab](https://github.com/ervandew/supertab)
     * auto-complete
 3. [MRU](https://github.com/vim-scripts/mru.vim)
