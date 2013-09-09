@@ -2,11 +2,9 @@ My toolkit including dotfiles, plugins and scripts.
 
 plugin list:
 * pathogen
-
-    plugin manager
+>plugin manager
 * supertab 
-
-    auto-complete
+>auto-complete
 * MRU 
 
     recent opened file list
