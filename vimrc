@@ -25,6 +25,9 @@ highlight CursorColumn ctermbg=DarkGray
 " Highlight searched text
 set hls
 
+" Auto find tags file in current project folder
+set tags=tags;/
+
 " Toggle NERDTree window
 map <F4> :NERDTreeToggle<CR>
 
