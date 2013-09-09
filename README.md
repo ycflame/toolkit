@@ -16,11 +16,9 @@ plugin list:
     * browse files in project fold
 7. [flake8](https://github.com/nvie/vim-flake8)
     * static syntax and PEP8 checker
+8. [UltiSnips](https://github.com/SirVer/ultisnips)
+    * code snippet as template
 
 plugin in beta:
 * taglist
-* pydiction
-* SnipMate
-* neocomplcache & neocomplete
-* YouCompleteMe & jedi-vim
 * PyUnit
