@@ -11,6 +11,7 @@ set smarttab
 set nu
 
 syntax on
+filetype on
 filetype plugin indent on
 
 " Highlight the 80th column as max line length
