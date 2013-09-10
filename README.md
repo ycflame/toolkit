@@ -18,6 +18,8 @@ plugin list:
     * static syntax and PEP8 checker
 8. [UltiSnips](https://github.com/SirVer/ultisnips)
     * code snippet as template
+9. [cscope_maps](https://github.com/chazy/cscope_maps)
+    * cscope key binding
 
 plugin in beta:
 * taglist
