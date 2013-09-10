@@ -22,3 +22,6 @@
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
+[submodule "vim/bundle/cscope_maps"]
+	path = vim/bundle/cscope_maps
+	url = git@github.com:chazy/cscope_maps.git
