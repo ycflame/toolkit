@@ -22,6 +22,8 @@ plugin list:
     * cscope key binding
 10. [vim-surround](https://github.com/tpope/vim-surround)
     * manipulate surroundings such as parentheses, brackets, quotes etc.
+11. [vim-repeat](https://github.com/tpope/vim-repeat)
+    * make vim-surround repeatable using '.' command
 
 plugin in beta:
 * taglist
