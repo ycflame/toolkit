@@ -26,5 +26,6 @@ plugin list:
     * make vim-surround repeatable using '.' command
 
 plugin in beta:
+* [syntastic](https://github.com/scrooloose/syntastic)
 * taglist
 * PyUnit
