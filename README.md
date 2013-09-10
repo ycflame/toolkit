@@ -20,6 +20,8 @@ plugin list:
     * code snippet as template
 9. [cscope_maps](https://github.com/chazy/cscope_maps)
     * cscope key binding
+10. [vim-surround](https://github.com/tpope/vim-surround)
+    * manipulate surroundings such as parentheses, brackets, quotes etc.
 
 plugin in beta:
 * taglist

@@ -25,3 +25,6 @@
 [submodule "vim/bundle/cscope_maps"]
 	path = vim/bundle/cscope_maps
 	url = git@github.com:chazy/cscope_maps.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = git@github.com:tpope/vim-surround.git
