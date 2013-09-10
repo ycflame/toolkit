@@ -2,23 +2,13 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-" Set tab length to 4 spaces
-set tabstop=4
+set tabstop=4       " Set tab length to 4 spaces
+set shiftwidth=4    " Set indent length to 4 spaces when pressing << or >>
+set expandtab       " Replace tab with spaces
+set smarttab        " Delete 4 spaces with one backspace in blank lines
 
-" Set indent length to 4 spaces when pressing << or >>
-set shiftwidth=4
-
-" Replace tab with spaces
-set expandtab
-
-" Delete 4 spaces with one backspace in blank lines
-set smarttab
-
-" Show line number
-set nu
-
-" Syntax highlight
-syntax on
+set nu              " Show line number
+syntax on           " Syntax highlight
 
 " Filetype detection, plugin files and indent files for specific file types 
 filetype plugin indent on
@@ -31,8 +21,9 @@ highlight ColorColumn ctermbg=DarkGray
 set cursorcolumn
 highlight CursorColumn ctermbg=DarkGray
 
-" Highlight searched text
-set hls
+set ignorecase      " Case-insensitive search
+set smartcase       " Case-sensitive search if any caps
+set hls             " Highlight searched text
 
 " Auto find tags file in current project folder
 set tags=tags;/
