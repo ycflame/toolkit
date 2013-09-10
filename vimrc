@@ -2,16 +2,25 @@
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
+" Set tab length to 4 spaces
 set tabstop=4
+
+" Set indent length to 4 spaces when pressing << or >>
 set shiftwidth=4
+
+" Replace tab with spaces
 set expandtab
+
+" Delete 4 spaces with one backspace in blank lines
 set smarttab
 
 " Show line number
 set nu
 
+" Syntax highlight
 syntax on
-filetype on
+
+" Filetype detection, plugin files and indent files for specific file types 
 filetype plugin indent on
 
 " Highlight the 80th column as max line length and set color
