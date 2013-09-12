@@ -25,7 +25,10 @@ plugin list:
 11. [vim-repeat](https://github.com/tpope/vim-repeat)
     * make vim-surround repeatable using '.' command
 
-plugin in beta:
+plugins in beta:
 * [syntastic](https://github.com/scrooloose/syntastic)
 * taglist
 * PyUnit
+
+TODO:
+repeat vim-surround elegantly
