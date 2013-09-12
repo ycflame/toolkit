@@ -31,9 +31,6 @@ set tags=tags;/
 " Toggle NERDTree window
 map <F4> :NERDTreeToggle<CR>
 
-" Toggle paste mode
-set pastetoggle=<F5>
-
 " Toggle line number
 map <F6> :set number!<CR>
 
@@ -89,3 +86,14 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+" Turn on paste mode when pasting and turn off after that
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
