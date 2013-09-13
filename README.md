@@ -24,11 +24,10 @@ plugin list:
     * manipulate surroundings such as parentheses, brackets, quotes etc.
 11. [vim-repeat](https://github.com/tpope/vim-repeat)
     * make vim-surround repeatable using '.' command
+12. [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+    * multi-line editing like sublime text
 
 plugins in beta:
 * [syntastic](https://github.com/scrooloose/syntastic)
 * taglist
 * PyUnit
-
-TODO:
-repeat vim-surround elegantly
