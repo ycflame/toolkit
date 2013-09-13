@@ -61,8 +61,6 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
-" Remember info about open buffers on close
-set viminfo^=%
 
 " Returns true if paste mode is enabled
 function! HasPaste()
@@ -98,3 +96,4 @@ func! XTermPasteBegin()
   set paste
   return ""
 endfunc
+
