@@ -28,6 +28,10 @@ set hls             " Highlight searched text
 " Auto find tags file in current project folder
 set tags=tags;/
 
+"=============================================================================
+" Function Key Mappings
+"=============================================================================
+
 " Toggle NERDTree window
 map <F4> :NERDTreeToggle<CR>
 
