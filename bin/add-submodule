@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# Usage: add-submodule repository-url
+# 
+# repository-url can be https or git
 
 submodule_name=$(echo "$1" | sed -n 's/.*\/\(.*\)\.git/\1/p')
 
