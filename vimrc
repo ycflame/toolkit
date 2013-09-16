@@ -37,8 +37,6 @@ map <F5> :MRU<CR>
 " Toggle line number
 map <F6> :set number!<CR>
 
-" Reserve F7 to run flake8
-
 " Run current script
 map <F8> :call RunSrc()<CR>
 
