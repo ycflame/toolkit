@@ -35,3 +35,12 @@ TODO:
 * manipulate copy, paste and select
 * fix bug in vim-multiple-cursors in some cases
 
+Requirements:
+
+1. General
+    * git
+    * cscope
+    * ctags
+2. Pip
+    * pycscope
+    * flake8
