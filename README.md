@@ -31,5 +31,7 @@ plugins in beta:
 * [YankRing](https://github.com/vim-scripts/YankRing.vim)
 
 TODO:
-* fix bug in vim-multiple-cursors in some cases
+* remap leaderkey and using it instead of F4 etc.
 * manipulate copy, paste and select
+* fix bug in vim-multiple-cursors in some cases
+
