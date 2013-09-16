@@ -102,3 +102,12 @@ endfunc
 
 let g:syntastic_auto_loc_list=1 " open error location list automaticly
 let g:syntastic_python_checkers=['flake8'] " set syntastic checker to flake8
+
+"=============================================================================
+" Insert Mode Ctrl Key Mappings
+"=============================================================================
+
+" Ctrl-e: Go to end of line
+inoremap <c-e> <esc>A
+" Ctrl-a: Go to begin of line
+inoremap <c-a> <esc>I
