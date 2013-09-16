@@ -61,12 +61,6 @@ endif
 exec "e! %"
 endfunc
 
-" Return to last edit position when opening files (You want this!)
-autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
-
 " Returns true if paste mode is enabled
 function! HasPaste()
     if &paste
@@ -80,6 +74,12 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
@@ -101,6 +101,10 @@ func! XTermPasteBegin()
   set paste
   return ""
 endfunc
+
+"=============================================================================
+" Plugin settings
+"=============================================================================
 
 let g:syntastic_auto_loc_list=1 " open error location list automaticly
 let g:syntastic_python_checkers=['flake8'] " set syntastic checker to flake8
