@@ -29,8 +29,7 @@ plugin list:
 
 plugins in beta:
 * [syntastic](https://github.com/scrooloose/syntastic)
-* taglist
-* PyUnit
 
 TODO:
 * fix bug in vim-multiple-cursors in some cases
+* manipulate copy, paste and select

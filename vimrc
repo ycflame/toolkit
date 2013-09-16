@@ -31,6 +31,9 @@ set tags=tags;/
 " Toggle NERDTree window
 map <F4> :NERDTreeToggle<CR>
 
+" Toggle MRU window
+map <F5> :MRU<CR>
+
 " Toggle line number
 map <F6> :set number!<CR>
 
