@@ -14,8 +14,6 @@ plugin list:
     * code folding
 6. [NERDTree](https://github.com/scrooloose/nerdtree)
     * browse files in project fold
-7. [flake8](https://github.com/nvie/vim-flake8)
-    * static syntax and PEP8 checker
 8. [UltiSnips](https://github.com/SirVer/ultisnips)
     * code snippet as template
 9. [cscope_maps](https://github.com/chazy/cscope_maps)
@@ -26,9 +24,11 @@ plugin list:
     * make vim-surround repeatable using '.' command
 12. [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
     * __Highly recommended!!!__ multi-line editing like sublime text
+13. [syntastic](https://github.com/scrooloose/syntastic)
+    * syntax and PEP8 style checker
 
 plugins in beta:
-* [syntastic](https://github.com/scrooloose/syntastic)
+* [YankRing](https://github.com/vim-scripts/YankRing.vim)
 
 TODO:
 * fix bug in vim-multiple-cursors in some cases
