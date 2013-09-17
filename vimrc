@@ -25,8 +25,6 @@ set ignorecase      " Case-insensitive search
 set smartcase       " Case-sensitive search if any caps
 set hls             " Highlight searched text
 
-" Auto find tags file in current project folder
-set tags=tags;/
 
 "=============================================================================
 " Function Key Mappings
@@ -106,6 +104,11 @@ endfunc
 " Plugin settings
 "=============================================================================
 
+" ctags
+" Auto find tags file in current project folder
+set tags=tags;/
+
+" syntastic
 let g:syntastic_auto_loc_list=1 " open error location list automaticly
 let g:syntastic_python_checkers=['flake8'] " set syntastic checker to flake8
 
