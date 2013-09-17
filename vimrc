@@ -83,13 +83,19 @@ inoremap <c-a> <esc>I
 let mapleader = ","
 
 " Toggle NERDTree window
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>t :NERDTreeToggle<CR>
 
-" Toggle MRU window
+" Open MRU window
 map <Leader>m :MRU<CR>
 
 " Toggle line number
-map <Leader>l :set number!<CR>
+map <Leader>n :set number!<CR>
+
+" Toggle line number
+map <Leader>e :Errors<CR>
+noremap <silent><leader>lc :lcl<CR>
+map <Leader>ln :lnext<CR>
+map <Leader>lp :lprev<CR>
 
 " Run current script
 map <Leader>r :call RunSrc()<CR>
@@ -123,6 +129,5 @@ call pathogen#infect()
 set tags=tags;/  " Auto find tags file in current project folder
 
 " syntastic
-let g:syntastic_auto_loc_list=1  " open error location list automaticly
 let g:syntastic_python_checkers=['flake8']  " set syntastic checker to flake8
 
