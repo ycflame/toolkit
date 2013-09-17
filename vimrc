@@ -83,22 +83,22 @@ inoremap <c-a> <esc>I
 let mapleader = ","
 
 " Toggle NERDTree window
-map <Leader>t :NERDTreeToggle<CR>
+noremap <Leader>t :NERDTreeToggle<CR>
 
 " Open MRU window
-map <Leader>m :MRU<CR>
+noremap <Leader>m :MRU<CR>
 
 " Toggle line number
-map <Leader>n :set number!<CR>
+noremap <Leader>n :set number!<CR>
 
 " Toggle line number
-map <Leader>e :Errors<CR>
+noremap <silent><Leader>e :Errors<CR>
 noremap <silent><leader>lc :lcl<CR>
-map <Leader>ln :lnext<CR>
-map <Leader>lp :lprev<CR>
+noremap <silent><Leader>ln :lnext<CR>
+noremap <silent><Leader>lp :lprev<CR>
 
 " Run current script
-map <Leader>r :call RunSrc()<CR>
+noremap <Leader>r :call RunSrc()<CR>
 
 " Define RunSrc()
 func! RunSrc()
