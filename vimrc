@@ -134,3 +134,6 @@ set tags=tags;/  " Auto find tags file in current project folder
 " syntastic
 let g:syntastic_python_checkers=['flake8']  " set syntastic checker to flake8
 
+" autopep8
+let g:autopep8_disable_show_diff=1
+
