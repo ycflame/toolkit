@@ -67,7 +67,7 @@ func! XTermPasteBegin()
 endfunc
 
 "=============================================================================
-" Insert Mode Ctrl Key Mappings
+" Insert Mode Key Mappings
 "=============================================================================
 
 " Ctrl-e: Go to end of line
@@ -76,7 +76,7 @@ inoremap <c-e> <esc>A
 inoremap <c-a> <esc>I
 
 "=============================================================================
-" Function Key Mappings
+" All Mode Key Mappings
 "=============================================================================
 
 " Set leader key to ,
