@@ -97,6 +97,9 @@ noremap <silent><leader>lc :lcl<CR>
 noremap <silent><Leader>ln :lnext<CR>
 noremap <silent><Leader>lp :lprev<CR>
 
+" Autopep8
+noremap <silent><Leader>p :call Autopep8()<CR>
+
 " Run current script
 noremap <Leader>r :call RunSrc()<CR>
 
