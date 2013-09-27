@@ -43,3 +43,4 @@ Requirements:
 2. Pip
     * pycscope
     * flake8
+    * autopep8
