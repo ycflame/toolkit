@@ -102,8 +102,29 @@ noremap <silent><leader>lc :lcl<CR>
 noremap <silent><Leader>ln :lnext<CR>
 noremap <silent><Leader>lp :lprev<CR>
 
-" Autopep8
-noremap <silent><Leader>p :call Autopep8()<CR>
+" autopep8
+noremap <silent><Leader>p :call FormartSrc()<CR>
+
+" Define FormartSrc()
+func FormartSrc()
+exec "w"
+if &filetype == 'c'
+exec "!astyle --style=ansi --one-line=keep-statements -a --suffix=none %"
+elseif &filetype == 'cpp' || &filetype == 'hpp'
+exec "r !astyle --style=ansi --one-line=keep-statements -a --suffix=none %> /dev/null 2>&1"
+elseif &filetype == 'perl'
+exec "!astyle --style=gnu --suffix=none %"
+elseif &filetype == 'py'||&filetype == 'python'
+exec "r !autopep8 -i --aggressive %"
+elseif &filetype == 'java'
+exec "!astyle --style=java --suffix=none %"
+elseif &filetype == 'jsp'
+exec "!astyle --style=gnu --suffix=none %"
+elseif &filetype == 'xml'
+exec "!astyle --style=gnu --suffix=none %"
+endif
+exec "e! %"
+endfunc
 
 " Run current script
 noremap <Leader>r :call RunSrc()<CR>
@@ -138,7 +159,3 @@ set tags=tags;/  " Auto find tags file in current project folder
 
 " syntastic
 let g:syntastic_python_checkers=['flake8']  " set syntastic checker to flake8
-
-" autopep8
-let g:autopep8_disable_show_diff=1
-
