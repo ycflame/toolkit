@@ -103,7 +103,7 @@ noremap <silent><Leader>ln :lnext<CR>
 noremap <silent><Leader>lp :lprev<CR>
 
 " autopep8
-noremap <silent><Leader>p :call FormartSrc()<CR>
+noremap <silent><Leader>f :call FormartSrc()<CR>
 
 " Define FormartSrc()
 func FormartSrc()
