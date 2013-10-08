@@ -33,6 +33,7 @@ plugins in beta:
 TODO:
 * manipulate copy, paste and select
 * fix bug in vim-multiple-cursors in some cases
+* Tmux
 
 Requirements:
 
