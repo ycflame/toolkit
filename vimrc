@@ -32,6 +32,8 @@ set shiftwidth=4    " Set indent length to 4 spaces when pressing << or >>
 set expandtab       " Replace tab with spaces
 set smarttab        " Delete 4 spaces with one backspace in blank lines
 
+let g:pyindent_open_paren = '&sw'
+
 " Filetype detection, plugin files and indent files for specific file types 
 filetype plugin indent on
 
