@@ -98,34 +98,47 @@ noremap <Leader>m :MRU<CR>
 " Toggle line number
 noremap <Leader>n :set number!<CR>
 
-" Toggle line number
+" Toggle location window
 noremap <silent><Leader>e :Errors<CR>
 noremap <silent><leader>lc :lcl<CR>
 noremap <silent><Leader>ln :lnext<CR>
 noremap <silent><Leader>lp :lprev<CR>
 
+" Jump to function definition of current statements
+noremap <Leader>d :call GotoFunc()<CR>
+
+" Define GotoFunc()
+func! GotoFunc()
+    if &filetype == 'py' || &filetype == 'python'
+        exec "?def "
+    elseif &filetype == 'c'
+        exec "?^{"
+        exec "normal k"
+    endif
+endfunc
+
 " autopep8
 noremap <silent><Leader>f :call FormartSrc()<CR>
 
 " Define FormartSrc()
-func FormartSrc()
-exec "w"
-if &filetype == 'c'
-exec "!astyle --style=ansi --one-line=keep-statements -a --suffix=none %"
-elseif &filetype == 'cpp' || &filetype == 'hpp'
-exec "r !astyle --style=ansi --one-line=keep-statements -a --suffix=none %> /dev/null 2>&1"
-elseif &filetype == 'perl'
-exec "!astyle --style=gnu --suffix=none %"
-elseif &filetype == 'py'||&filetype == 'python'
-exec "r !autopep8 -i --aggressive %"
-elseif &filetype == 'java'
-exec "!astyle --style=java --suffix=none %"
-elseif &filetype == 'jsp'
-exec "!astyle --style=gnu --suffix=none %"
-elseif &filetype == 'xml'
-exec "!astyle --style=gnu --suffix=none %"
-endif
-exec "e! %"
+func! FormartSrc()
+    exec "w"
+    if &filetype == 'c'
+        exec "!astyle --style=ansi --one-line=keep-statements -a --suffix=none %"
+    elseif &filetype == 'cpp' || &filetype == 'hpp'
+        exec "r !astyle --style=ansi --one-line=keep-statements -a --suffix=none %> /dev/null 2>&1"
+    elseif &filetype == 'perl'
+        exec "!astyle --style=gnu --suffix=none %"
+    elseif &filetype == 'py'||&filetype == 'python'
+        exec "r !autopep8 -i --aggressive %"
+    elseif &filetype == 'java'
+        exec "!astyle --style=java --suffix=none %"
+    elseif &filetype == 'jsp'
+        exec "!astyle --style=gnu --suffix=none %"
+    elseif &filetype == 'xml'
+        exec "!astyle --style=gnu --suffix=none %"
+    endif
+    exec "e! %"
 endfunc
 
 " Run current script
@@ -133,19 +146,19 @@ noremap <Leader>r :call RunSrc()<CR>
 
 " Define RunSrc()
 func! RunSrc()
-exec "w"
-if &filetype == 'c'
-exec "!astyle --style=ansi --one-line=keep-statements -a --suffix=none %"
-elseif &filetype == 'cpp' || &filetype == 'hpp'
-exec "r !astyle --style=ansi --one-line=keep-statements -a --suffix=none %> /dev/null 2>&1"
-elseif &filetype == 'perl'
-exec "!astyle --style=gnu --suffix=none %"
-elseif &filetype == 'py'||&filetype == 'python'
-exec "!python %"
-elseif &filetype == 'java'
-exec "!astyle --style=java --suffix=none %"
-endif
-exec "e! %"
+    exec "w"
+    if &filetype == 'c'
+        exec "!astyle --style=ansi --one-line=keep-statements -a --suffix=none %"
+    elseif &filetype == 'cpp' || &filetype == 'hpp'
+        exec "r !astyle --style=ansi --one-line=keep-statements -a --suffix=none %> /dev/null 2>&1"
+    elseif &filetype == 'perl'
+        exec "!astyle --style=gnu --suffix=none %"
+    elseif &filetype == 'py'||&filetype == 'python'
+        exec "!python %"
+    elseif &filetype == 'java'
+        exec "!astyle --style=java --suffix=none %"
+    endif
+    exec "e! %"
 endfunc
 
 "=============================================================================
