@@ -14,18 +14,20 @@ plugin list:
     * code folding
 6. [NERDTree](https://github.com/scrooloose/nerdtree)
     * browse files in project fold
-8. [UltiSnips](https://github.com/SirVer/ultisnips)
+7. [UltiSnips](https://github.com/SirVer/ultisnips)
     * code snippet as template
-9. [cscope_maps](https://github.com/chazy/cscope_maps)
+8. [cscope_maps](https://github.com/chazy/cscope_maps)
     * cscope key binding
-10. [vim-surround](https://github.com/tpope/vim-surround)
+9. [vim-surround](https://github.com/tpope/vim-surround)
     * manipulate surroundings such as parentheses, brackets, quotes etc.
-11. [vim-repeat](https://github.com/tpope/vim-repeat)
+10. [vim-repeat](https://github.com/tpope/vim-repeat)
     * make vim-surround repeatable using '.' command
-12. [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+11. [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
     * __Highly recommended!!!__ multi-line editing like sublime text
-13. [syntastic](https://github.com/scrooloose/syntastic)
+12. [syntastic](https://github.com/scrooloose/syntastic)
     * syntax and PEP8 style checker
+13. [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
+    * defines a new text object representing code at the same indent level
 
 plugins in beta:
 * [YankRing](https://github.com/vim-scripts/YankRing.vim)
