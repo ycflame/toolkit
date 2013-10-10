@@ -32,7 +32,7 @@ set shiftwidth=4    " Set indent length to 4 spaces when pressing << or >>
 set expandtab       " Replace tab with spaces
 set smarttab        " Delete 4 spaces with one backspace in blank lines
 
-let g:pyindent_open_paren = '&sw'
+let g:pyindent_open_paren = '&sw'  " indent 4 spaces when continuing lines 
 
 " Filetype detection, plugin files and indent files for specific file types 
 filetype plugin indent on
@@ -161,4 +161,4 @@ set tags=tags;/  " Auto find tags file in current project folder
 
 " syntastic
 let g:syntastic_python_checkers=['flake8']  " set syntastic checker to flake8
-let g:syntastic_python_flake8_args="--ignore=E501"
+let g:syntastic_python_flake8_args="--ignore=E501" " ignore line too long
