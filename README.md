@@ -30,10 +30,10 @@ plugin list:
     * defines a new text object representing code at the same indent level
 
 plugins in beta:
-* [YankRing](https://github.com/vim-scripts/YankRing.vim)
+* [TagBar](https://github.com/majutsushi/tagbar)
+* [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
 
 TODO:
-* manipulate copy, paste and select
 * fix bug in vim-multiple-cursors in some cases
 * Tmux
 
