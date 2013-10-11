@@ -27,6 +27,9 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w   " Format the status line
 "=============================================================================
 " Misc
 "=============================================================================
+
+set nocompatible  " Don't be competivle with vi
+
 set tabstop=4       " Set tab length to 4 spaces
 set shiftwidth=4    " Set indent length to 4 spaces when pressing << or >>
 set expandtab       " Replace tab with spaces
