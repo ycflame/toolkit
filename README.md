@@ -34,7 +34,6 @@ plugins in beta:
 
 TODO:
 * manipulate copy, paste and select
-* undo tree
 * fix bug in vim-multiple-cursors in some cases
 * Tmux
 
