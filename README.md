@@ -28,6 +28,8 @@ plugin list:
     * syntax and PEP8 style checker
 13. [vim-indent-object](https://github.com/michaeljsmith/vim-indent-object)
     * defines a new text object representing code at the same indent level
+14. [vim-autoclose](https://github.com/Townk/vim-autoclose)
+    * auto-close your brackets, quotes etc.
 
 plugins in beta:
 * [TagBar](https://github.com/majutsushi/tagbar)
