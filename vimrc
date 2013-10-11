@@ -13,14 +13,6 @@ highlight ColorColumn ctermbg=DarkGray
 set cursorcolumn
 highlight CursorColumn ctermbg=DarkGray
 
-" Returns true if paste mode is enabled
-func! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    endif
-    return ''
-endfunc
-
 set laststatus=2    " Always show the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w   " Format the status line
 
@@ -28,7 +20,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w   " Format the status line
 " Misc
 "=============================================================================
 
-set nocompatible  " Don't be competivle with vi
+set nocompatible  " Don't be compatible with vi
 
 set tabstop=4       " Set tab length to 4 spaces
 set shiftwidth=4    " Set indent length to 4 spaces when pressing << or >>
@@ -53,12 +45,6 @@ augroup RememberPosition
 augroup END
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
-
 augroup DeleteTrailing
     autocmd BufWrite *.py :call DeleteTrailingWS()
     autocmd BufWrite *.coffee :call DeleteTrailingWS()
@@ -69,12 +55,6 @@ let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
-
-func! XTermPasteBegin()
-  set pastetoggle=<Esc>[201~
-  set paste
-  return ""
-endfunc
 
 "=============================================================================
 " Insert Mode Key Mappings
@@ -110,21 +90,40 @@ noremap <silent><Leader>lp :lprev<CR>
 " Jump to function definition of current statements
 noremap <Leader>d :call GotoFunc()<CR>
 
-" Define GotoFunc()
-func! GotoFunc()
-    if &filetype == 'py' || &filetype == 'python'
-        exec "?def "
-    elseif &filetype == 'c'
-        exec "?^{"
-        exec "normal k"
-    endif
+" autopep8
+noremap <silent><Leader>f :call FormatSrc()<CR>
+
+" Run current script
+noremap <Leader>r :call RunSrc()<CR>
+
+"=============================================================================
+" Plugin settings
+"=============================================================================
+
+" pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
+" ctags
+set tags=tags;/  " Auto find tags file in current project folder
+
+" syntastic
+let g:syntastic_python_checkers=['flake8']  " set syntastic checker to flake8
+let g:syntastic_python_flake8_args="--ignore=E501" " ignore line too long
+
+"=============================================================================
+" Functions
+"=============================================================================
+
+" Delete trailing whitespaces
+func! DeleteTrailingWS()
+  exe "normal mz"
+  %s/\s\+$//ge
+  exe "normal `z"
 endfunc
 
-" autopep8
-noremap <silent><Leader>f :call FormartSrc()<CR>
-
-" Define FormartSrc()
-func! FormartSrc()
+" Format code style
+func! FormatSrc()
     exec "w"
     if &filetype == 'c'
         exec "!astyle --style=ansi --one-line=keep-statements -a --suffix=none %"
@@ -144,10 +143,25 @@ func! FormartSrc()
     exec "e! %"
 endfunc
 
-" Run current script
-noremap <Leader>r :call RunSrc()<CR>
+" Jump to current function definition
+func! GotoFunc()
+    if &filetype == 'py' || &filetype == 'python'
+        exec "?def "
+    elseif &filetype == 'c'
+        exec "?^{"
+        exec "normal k"
+    endif
+endfunc
 
-" Define RunSrc()
+" Display PASTE MODE in status line if paste mode is enabled
+func! HasPaste()
+    if &paste
+        return 'PASTE MODE  '
+    endif
+    return ''
+endfunc
+
+" Run current file
 func! RunSrc()
     exec "w"
     if &filetype == 'c'
@@ -164,17 +178,9 @@ func! RunSrc()
     exec "e! %"
 endfunc
 
-"=============================================================================
-" Plugin settings
-"=============================================================================
-
-" pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
-
-" ctags
-set tags=tags;/  " Auto find tags file in current project folder
-
-" syntastic
-let g:syntastic_python_checkers=['flake8']  " set syntastic checker to flake8
-let g:syntastic_python_flake8_args="--ignore=E501" " ignore line too long
+" Toggle paste mode before pasting
+func! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunc
