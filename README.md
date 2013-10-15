@@ -30,10 +30,11 @@ plugin list:
     * defines a new text object representing code at the same indent level
 14. [vim-autoclose](https://github.com/Townk/vim-autoclose)
     * auto-close your brackets, quotes etc.
+15. [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
+    * shortcuts for commenting your code
 
 plugins in beta:
 * [TagBar](https://github.com/majutsushi/tagbar)
-* [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
 
 TODO:
 * fix bug in vim-multiple-cursors in some cases
