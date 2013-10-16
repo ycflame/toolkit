@@ -72,9 +72,6 @@ inoremap <c-a> <esc>I
 " Set leader key to ,
 let mapleader = ","
 
-" Toggle NERDTree window
-noremap <Leader>t :NERDTreeToggle<CR>
-
 " Open MRU window
 noremap <Leader>m :MRU<CR>
 
