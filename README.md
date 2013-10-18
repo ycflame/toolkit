@@ -36,7 +36,7 @@ plugins in beta:
 
 TODO:
 * fix bug in vim-multiple-cursors in some cases
-* make python comment character in a column for NerdCommenter
+* make # in the same column when visual select code for NerdCommenter
 * Tmux
 
 Requirements:
