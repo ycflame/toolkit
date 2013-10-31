@@ -14,13 +14,18 @@ set cursorcolumn
 highlight CursorColumn ctermbg=DarkGray
 
 set laststatus=2    " Always show the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w   " Format the status line
+
+" Format the status line
+set statusline=\ %{HasPaste()}%f%m%r%h\ %w\ %l,%c\ %P
 
 "=============================================================================
 " Misc
 "=============================================================================
 
 set nocompatible  " Don't be compatible with vi
+
+set encoding=utf-8  " Set encoding in Vim
+set fileencodings=utf-8,cp936,gbk  " Set encoding order when detecting files
 
 set tabstop=4       " Set tab length to 4 spaces
 set shiftwidth=4    " Set indent length to 4 spaces when pressing << or >>
