@@ -35,8 +35,9 @@ plugins in beta:
 * [TagBar](https://github.com/majutsushi/tagbar)
 
 TODO:
-* fix bug in vim-multiple-cursors in some cases
+* spelling check
 * make # in the same column when visual select code for NerdCommenter
+* fix bug in vim-multiple-cursors in some cases
 * Tmux
 
 Requirements:
