@@ -98,6 +98,9 @@ noremap <silent><Leader>f :call FormatSrc()<CR>
 " Run current script
 noremap <Leader>r :call RunSrc()<CR>
 
+" Toggle Spell Checking
+noremap <Leader>s :setlocal spell!<CR>
+
 "=============================================================================
 " Plugin settings
 "=============================================================================
