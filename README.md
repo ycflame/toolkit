@@ -35,7 +35,6 @@ plugins in beta:
 * [TagBar](https://github.com/majutsushi/tagbar)
 
 TODO:
-* spelling check
 * make # in the same column when visual select code for NerdCommenter
 * Tmux
 
