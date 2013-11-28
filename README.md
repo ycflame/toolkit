@@ -37,7 +37,6 @@ plugins in beta:
 TODO:
 * spelling check
 * make # in the same column when visual select code for NerdCommenter
-* fix bug in vim-multiple-cursors in some cases
 * Tmux
 
 Requirements:
