@@ -13,6 +13,10 @@ highlight ColorColumn ctermbg=DarkGray
 set cursorcolumn
 highlight CursorColumn ctermbg=DarkGray
 
+" Highlight the line cursor stands set color
+set cursorline
+highlight CursorLine ctermbg=DarkGray
+
 set laststatus=2    " Always show the status line
 
 " Format the status line
