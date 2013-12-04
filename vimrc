@@ -82,10 +82,10 @@ inoremap <c-a> <esc>I
 let mapleader = ","
 
 " Open MRU window
-noremap <Leader>m :MRU<CR>
+noremap <silent><Leader>m :MRU<CR>
 
 " Toggle line number
-noremap <Leader>n :set number!<CR>
+noremap <silent><Leader>n :set number!<CR>
 
 " Toggle location window
 noremap <silent><Leader>e :Errors<CR>
@@ -94,16 +94,16 @@ noremap <silent><Leader>ln :lnext<CR>
 noremap <silent><Leader>lp :lprev<CR>
 
 " Jump to function definition of current statements
-noremap <Leader>d :call GotoFunc()<CR>
+noremap <silent><Leader>d :call GotoFunc()<CR>
 
 " autopep8
 noremap <silent><Leader>f :call FormatSrc()<CR>
 
 " Run current script
-noremap <Leader>r :call RunSrc()<CR>
+noremap <silent><Leader>r :call RunSrc()<CR>
 
 " Toggle Spell Checking
-noremap <Leader>s :setlocal spell!<CR>
+noremap <silent><Leader>s :setlocal spell!<CR>
 
 "=============================================================================
 " Plugin settings
