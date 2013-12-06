@@ -1,5 +1,12 @@
 My toolkit including dotfiles, plugins and scripts.
 
+### How to install
+```
+git clone git@github.com:YCFlame/toolkit.git
+cd toolkit
+./install
+```
+
 plugin list:
 
 1. [pathogen](https://github.com/tpope/vim-pathogen)
