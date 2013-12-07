@@ -35,14 +35,13 @@ plugin list:
     * defines a new text object representing code at the same indent level
 13. [vim-autoclose](https://github.com/Townk/vim-autoclose)
     * auto-close your brackets, quotes etc.
-14. [NerdCommenter](https://github.com/scrooloose/nerdcommenter)
+14. [tcomment](https://github.com/tomtom/tcomment_vim)
     * shortcuts for commenting your code
 
 plugins in beta:
 * [TagBar](https://github.com/majutsushi/tagbar)
 
 TODO:
-* make # in the same column when visual select code for NerdCommenter
 * Tmux
 
 Requirements:
