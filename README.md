@@ -1,8 +1,6 @@
 My toolkit including dotfiles, plugins and scripts.
 
-<script data-gittip-username="YCFlame"
-        data-gittip-widget="button"
-        src="//gttp.co/v1.js"></script>
+[![Gittip](https://www.gittip.com/assets/7.0.8/logo.png)](https://www.gittip.com/YCFlame/)
 
 ### How to install
 ```
