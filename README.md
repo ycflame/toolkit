@@ -1,5 +1,9 @@
 My toolkit including dotfiles, plugins and scripts.
 
+<script data-gittip-username="YCFlame"
+        data-gittip-widget="button"
+        src="//gttp.co/v1.js"></script>
+
 ### How to install
 ```
 git clone git@github.com:YCFlame/toolkit.git
