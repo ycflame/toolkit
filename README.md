@@ -1,6 +1,6 @@
 My toolkit including dotfiles, plugins and scripts.
 
-[![Gittip](https://www.gittip.com/assets/7.0.8/logo.png)](https://www.gittip.com/YCFlame/)
+[![Donate at Gittip](https://dl.dropboxusercontent.com/u/487440/reformal/donate.png)](https://www.gittip.com/YCFlame/)
 
 ### How to install
 ```
