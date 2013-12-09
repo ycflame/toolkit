@@ -22,6 +22,9 @@ set laststatus=2    " Always show the status line
 " Format the status line
 set statusline=\ %{HasPaste()}%f%m%r%h\ %w\ %=%l,\ %c\ \ %P
 
+" show current command
+set showcmd
+
 "=============================================================================
 " Misc
 "=============================================================================
