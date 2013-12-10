@@ -12,7 +12,7 @@
 	url = git@github.com:vim-scripts/python.vim--Vasiliev.git
 [submodule "vim/bundle/SimpylFold"]
 	path = vim/bundle/SimpylFold
-	url = git@github.com:tmhedberg/SimpylFold.git
+	url = git@github.com:vim-scripts/SimpylFold.git
 [submodule "vim/bundle/ultisnips"]
 	path = vim/bundle/ultisnips
 	url = git@github.com:SirVer/ultisnips.git
