@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Usage: build-refer [directory path]
+
+if [ -n $1 ]; then
+    cd $1
+fi
+
+ctags -R *
+pycscope -R *
