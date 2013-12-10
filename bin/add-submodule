@@ -2,7 +2,7 @@
 #
 # Usage: add-submodule repository-url
 # 
-# repository-url can be https or git
+# repository-url can be https or ssh
 
 submodule_name=$(echo "$1" | sed -n 's/.*\/\(.*\)\.git/\1/p')
 
