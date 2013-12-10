@@ -19,7 +19,7 @@ plugin list:
     * recent opened file list
 4. [python.vim](https://github.com/vim-scripts/python.vim--Vasiliev)
     * syntax highlight
-5. [SimpylFold](https://github.com/vim-scripts/SimpylFold)
+5. [SimpylFold](https://github.com/tmhedberg/SimpylFold)
     * code folding
 6. [UltiSnips](https://github.com/SirVer/ultisnips)
     * code snippet as template
