@@ -1,6 +1,6 @@
 My toolkit including dotfiles, plugins and scripts. [![Donate at Gittip](https://dl.dropboxusercontent.com/u/487440/reformal/donate.png)](https://www.gittip.com/YCFlame/)
 
-[![Continuous Integration status](https://secure.travis-ci.org/travis-ci/travis-lint.png)](http://travis-ci.org/YCFlame/toolkit)
+[![Continuous Integration status](https://api.travis-ci.org/YCFlame/toolkit.png)](http://travis-ci.org/YCFlame/toolkit)
 
 ### How to install
 ```
