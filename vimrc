@@ -2,6 +2,8 @@
 " General Looking
 "=============================================================================
 
+set nocompatible  " Don't be compatible with vi
+
 set nu              " Show line number
 syntax on           " Syntax highlight
 
@@ -28,8 +30,6 @@ set showcmd
 "=============================================================================
 " Misc
 "=============================================================================
-
-set nocompatible  " Don't be compatible with vi
 
 set encoding=utf-8  " Set encoding in Vim
 set fileencodings=utf-8,cp936,gbk  " Set encoding order when detecting files
