@@ -39,6 +39,8 @@ plugin list:
     * auto-close your brackets, quotes etc.
 14. [tcomment](https://github.com/tomtom/tcomment_vim)
     * shortcuts for commenting your code
+15. [vim-template](https://github.com/aperezdc/vim-template)
+    * template system for different file types
 
 plugins in beta:
 * [TagBar](https://github.com/majutsushi/tagbar)
