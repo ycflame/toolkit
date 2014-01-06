@@ -21,6 +21,7 @@ exit_err() {
 if git submodule status "$submodule_name" >/dev/null 2>&1; then
   git submodule deinit -f "$submodule_name"
   git rm "$submodule_name"
+  git config -f .gitmodules --remove-section "submodule.$submodule_name"
 else
   exit_err "Submodule '$submodule_name' not found"
 fi

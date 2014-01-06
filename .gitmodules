@@ -40,6 +40,3 @@
 [submodule "vim/bundle/tcomment_vim"]
 	path = vim/bundle/tcomment_vim
 	url = https://github.com/tomtom/tcomment_vim.git
-[submodule "vim/bundle/vim-template"]
-	path = vim/bundle/vim-template
-	url = https://github.com/YCFlame/vim-template.git
