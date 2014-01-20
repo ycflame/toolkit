@@ -101,6 +101,9 @@ noremap <silent><Leader>lp :lprev<CR>
 " Jump to function definition of current statements
 noremap <silent><Leader>d :call GotoFunc()<CR>
 
+" Jump to function definition of current statements
+noremap <silent><Leader>c :call GotoClass()<CR>
+
 " autopep8
 noremap <silent><Leader>f :call FormatSrc()<CR>
 
@@ -146,7 +149,7 @@ func! FormatSrc()
     elseif &filetype == 'perl'
         exec "!astyle --style=gnu --suffix=none %"
     elseif &filetype == 'py'||&filetype == 'python'
-        exec "r !autopep8 -i --aggressive --ignore=E401,E501 %"
+        exec "r !autopep8 -i --aggressive --ignore=E501 %"
     elseif &filetype == 'java'
         exec "!astyle --style=java --suffix=none %"
     elseif &filetype == 'jsp'
@@ -164,6 +167,13 @@ func! GotoFunc()
     elseif &filetype == 'c'
         exec "?^{"
         exec "normal k"
+    endif
+endfunc
+
+" Jump to current function definition
+func! GotoClass()
+    if &filetype == 'py' || &filetype == 'python'
+        exec "?class "
     endif
 endfunc
 
