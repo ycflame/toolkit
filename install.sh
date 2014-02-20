@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+sudo pip install -r requirements.txt
 git submodule init
 git submodule update
 cp ~/.vimrc{,.bak}
