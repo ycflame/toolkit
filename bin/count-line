@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Usage: count-line [type]
+
+TYPE="py"
+
+if [ -n "$1" ]; then
+    TYPE=$1
+fi
+
+find . -name "*.$TYPE" | xargs cat | wc -l
