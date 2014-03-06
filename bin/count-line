@@ -8,4 +8,4 @@ if [ -n "$1" ]; then
     TYPE=$1
 fi
 
-find . -name "*.$TYPE" | xargs cat | wc -l
+find . -name "*.$TYPE" | sed 's/ /\\ /g' | xargs cat | wc -l
