@@ -6,3 +6,5 @@ export GIT_MERGE_AUTOEDIT=no
 source /usr/share/autojump/autojump.sh
 bindkey \^U backward-kill-line
 unsetopt histverify
+alias 'rm'='mv --verbose -f --backup=numbered --target-directory ~/.trash'
+alias 'squash'='/bin/rm -rf ~/.trash/*'
