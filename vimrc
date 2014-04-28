@@ -11,10 +11,6 @@ syntax on           " Syntax highlight
 set colorcolumn=80
 highlight ColorColumn ctermbg=DarkGray
 
-" Highlight the column cursor stands for indent checking and set color
-set cursorcolumn
-highlight CursorColumn ctermbg=DarkGray
-
 " Highlight the line cursor stands set color
 set cursorline
 highlight CursorLine ctermbg=DarkGray
