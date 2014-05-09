@@ -109,6 +109,9 @@ noremap <silent><Leader>r :call RunSrc()<CR>
 " Toggle Spell Checking
 noremap <silent><Leader>s :setlocal spell!<CR>
 
+" Toggle IndentLines
+noremap <silent><Leader>i :IndentLinesToggle<CR>
+
 "=============================================================================
 " Plugin settings
 "=============================================================================
