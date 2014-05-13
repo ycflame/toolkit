@@ -85,8 +85,8 @@ let mapleader = ","
 " Open MRU window
 noremap <silent><Leader>m :MRU<CR>
 
-" Toggle line number
-noremap <silent><Leader>n :set number!<CR>
+" Toggle line number and IndentLines
+noremap <silent><Leader>n :set number!<CR> :IndentLinesToggle<CR>
 
 " Toggle location window
 noremap <silent><Leader>e :Errors<CR>
@@ -108,9 +108,6 @@ noremap <silent><Leader>r :call RunSrc()<CR>
 
 " Toggle Spell Checking
 noremap <silent><Leader>s :setlocal spell!<CR>
-
-" Toggle IndentLines
-noremap <silent><Leader>i :IndentLinesToggle<CR>
 
 "=============================================================================
 " Plugin settings
