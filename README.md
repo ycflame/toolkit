@@ -2,7 +2,7 @@ My toolkit including dotfiles, plugins and scripts.
 
 ### How to install
 ```
-git clone git@github.com:YCFlame/toolkit.git
+git clone https://github.com/ycflame/toolkit.git
 cd toolkit
 ./install
 ```
