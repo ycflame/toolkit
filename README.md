@@ -1,4 +1,4 @@
-My toolkit including dotfiles, plugins and scripts. [![Continuous Integration status](http://img.shields.io/travis/YCFlame/toolkit/master.svg?style=flat)](http://travis-ci.org/YCFlame/toolkit)
+My toolkit including dotfiles, plugins and scripts.
 
 ### How to install
 ```
