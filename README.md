@@ -1,6 +1,4 @@
-My toolkit including dotfiles, plugins and scripts. [![Continuous Integration status](https://api.travis-ci.org/YCFlame/toolkit.png)](http://travis-ci.org/YCFlame/toolkit)
-
-[![Gittip](https://rawgithub.com/twolfson/gittip-badge/0.1.0/dist/gittip.png)](https://www.gittip.com/YCFlame/)
+My toolkit including dotfiles, plugins and scripts. [![Continuous Integration status](http://img.shields.io/travis/YCFlame/toolkit/master.svg?style=flat)](http://travis-ci.org/YCFlame/toolkit)
 
 ### How to install
 ```
