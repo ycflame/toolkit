@@ -97,7 +97,7 @@ noremap <silent><Leader>lp :lprev<CR>
 " Jump to function definition of current statements
 noremap <silent><Leader>d :call GotoFunc()<CR>
 
-" Jump to function definition of current statements
+" Jump to class definition of current statements
 noremap <silent><Leader>c :call GotoClass()<CR>
 
 " autopep8
