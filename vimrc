@@ -1,14 +1,14 @@
-"=============================================================================
+"===========================================================================
 " General Looking
-"=============================================================================
+"===========================================================================
 
 set nocompatible  " Don't be compatible with vi
 
 set nu              " Show line number
 syntax on           " Syntax highlight
 
-" Highlight the 76th column as max line length and set color
-set colorcolumn=76
+" Highlight the 77th column as max line length and set color
+set colorcolumn=77
 highlight ColorColumn ctermbg=DarkGray
 
 " Highlight the line cursor stands set color
@@ -23,9 +23,9 @@ set statusline=\ %{HasPaste()}%f%m%r%h\ %w\ %=%l,\ %c\ \ %P
 " show current command
 set showcmd
 
-"=============================================================================
+"===========================================================================
 " Misc
-"=============================================================================
+"===========================================================================
 
 set encoding=utf-8  " Set encoding in Vim
 set fileencodings=utf-8,cp936,gbk  " Set encoding order when detecting files
@@ -66,18 +66,18 @@ let &t_EI .= "\<Esc>[?2004l"
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
-"=============================================================================
+"===========================================================================
 " Insert Mode Key Mappings
-"=============================================================================
+"===========================================================================
 
 " Ctrl-e: Go to end of line
 inoremap <c-e> <esc>A
 " Ctrl-a: Go to begin of line
 inoremap <c-a> <esc>I
 
-"=============================================================================
+"===========================================================================
 " All Mode Key Mappings
-"=============================================================================
+"===========================================================================
 
 " Set leader key to ,
 let mapleader = ","
@@ -109,9 +109,9 @@ noremap <silent><Leader>r :call RunSrc()<CR>
 " Toggle Spell Checking
 noremap <silent><Leader>s :setlocal spell!<CR>
 
-"=============================================================================
+"===========================================================================
 " Plugin settings
-"=============================================================================
+"===========================================================================
 
 " pathogen
 runtime bundle/vim-pathogen/autoload/pathogen.vim
@@ -121,12 +121,12 @@ call pathogen#infect()
 set tags=tags;/  " Auto find tags file in current project folder
 
 " syntastic
-let g:syntastic_python_checkers=['flake8']  " set syntastic checker to flake8
+let g:syntastic_python_checkers=['flake8'] " set flake8 as syntastic checker
 let g:syntastic_python_flake8_args="--ignore=E501" " ignore line too long
 
-"=============================================================================
+"===========================================================================
 " Functions
-"=============================================================================
+"===========================================================================
 
 " Delete trailing whitespaces
 func! DeleteTrailingWS()
