@@ -7,8 +7,8 @@ set nocompatible  " Don't be compatible with vi
 set nu              " Show line number
 syntax on           " Syntax highlight
 
-" Highlight the 80th column as max line length and set color
-set colorcolumn=80
+" Highlight the 76th column as max line length and set color
+set colorcolumn=76
 highlight ColorColumn ctermbg=DarkGray
 
 " Highlight the line cursor stands set color
