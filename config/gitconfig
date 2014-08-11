@@ -10,6 +10,7 @@
     hist = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --graph --color --date=short
     type = cat-file -t
     dump = cat-file -p
+    track = for-each-ref --format='%(refname:short) <- %(upstream:short)' refs/heads
 [push]
 	default = simple
 [core]
