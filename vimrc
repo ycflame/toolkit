@@ -145,7 +145,7 @@ func! FormatSrc()
     elseif &filetype == 'perl'
         exec "!astyle --style=gnu --suffix=none %"
     elseif &filetype == 'py'||&filetype == 'python'
-        exec "r !autopep8 -i --aggressive --ignore=E501 %"
+        exec "r !autopep8 -i --aggressive --ignore=W690,E501 %"
     elseif &filetype == 'java'
         exec "!astyle --style=java --suffix=none %"
     elseif &filetype == 'jsp'
