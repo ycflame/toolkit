@@ -109,6 +109,9 @@ noremap <silent><Leader>r :call RunSrc()<CR>
 " Toggle Spell Checking
 noremap <silent><Leader>s :setlocal spell!<CR>
 
+" Toggle Tagbar
+noremap <silent><Leader>t :TagbarToggle<CR>
+
 "===========================================================================
 " Plugin settings
 "===========================================================================

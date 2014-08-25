@@ -39,9 +39,10 @@ plugin list:
     * shortcuts for commenting your code
 15. [vim-template](https://github.com/aperezdc/vim-template)
     * template system for different file types
+16. [TagBar](https://github.com/majutsushi/tagbar)
+    * display tags of a file ordered by scope
 
 plugins in beta:
-* [TagBar](https://github.com/majutsushi/tagbar)
 
 TODO:
 * Tmux
