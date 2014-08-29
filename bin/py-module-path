@@ -22,5 +22,5 @@ if __name__ == '__main__':
                 print module.__path__[0]
             elif hasattr(module, '__file__'):
                 print os.path.dirname(module.__file__)
-
-            print 'We meet a problem >_<'
+            else:
+                print 'We meet a problem >_<'
