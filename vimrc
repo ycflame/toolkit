@@ -9,7 +9,7 @@ syntax on           " Syntax highlight
 
 " Highlight the 77th column as max line length and set color
 set colorcolumn=77
-highlight ColorColumn ctermbg=DarkGray
+highlight ColorColumn ctermbg=blue
 
 " Highlight the line cursor stands set color
 set cursorline
