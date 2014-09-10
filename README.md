@@ -41,6 +41,8 @@ plugin list:
     * template system for different file types
 16. [TagBar](https://github.com/majutsushi/tagbar)
     * display tags of a file ordered by scope
+17. [ack.vim](https://github.com/mileszs/ack.vim)
+    * vim plugin for the Perl module / CLI script 'ack'
 
 plugins in beta:
 
