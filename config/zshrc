@@ -8,3 +8,5 @@ bindkey \^U backward-kill-line
 unsetopt histverify
 alias 'rm'='mv --verbose -f --backup=numbered --target-directory ~/.trash'
 alias 'squash'='/bin/rm -rf ~/.trash/*'
+echo -en "\e]1;$HOST\a"
+echo -en "\e]2;$USER@$HOST:$PWD\a"
