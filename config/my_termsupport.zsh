@@ -17,3 +17,15 @@ ZSH_THEME_TERM_TITLE_IDLE="%n@%m: %~"
 function omz_termsupport_precmd {
   title $ZSH_THEME_TERM_TAB_TITLE_IDLE $ZSH_THEME_TERM_TITLE_IDLE
 }
+
+#Appears at the beginning of (and during) of command execution
+function omz_termsupport_preexec {
+  emulate -L zsh
+  setopt extended_glob
+
+  # cmd name only, or if this is sudo or ssh, the next cmd
+  local CMD=${1[(wr)^(*=*|sudo|ssh|rake|-*)]:gs/%/%%}
+  local LINE="${2:gs/%/%%}"
+
+  title '%m: $CMD' '%n@%m: %100>...>$LINE%<<'
+}
