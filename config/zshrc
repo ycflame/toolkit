@@ -3,8 +3,10 @@ plugins=(git, github, git-remote-branch, osx)
 source $ZSH/oh-my-zsh.sh
 
 export GIT_MERGE_AUTOEDIT=no
-source /usr/share/autojump/autojump.sh
 bindkey \^U backward-kill-line
 unsetopt histverify
 alias 'rm'='mv --verbose -f --backup=numbered --target-directory ~/.trash'
 alias 'squash'='/bin/rm -rf ~/.trash/*'
+alias '..'='cd ..'
+alias '...'='cd ../..'
+autoload -U compinit && compinit -u
