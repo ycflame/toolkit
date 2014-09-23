@@ -127,6 +127,13 @@ set tags=tags;/  " Auto find tags file in current project folder
 let g:syntastic_python_checkers=['flake8'] " set flake8 as syntastic checker
 let g:syntastic_python_flake8_args="--ignore=E501" " ignore line too long
 
+" EasyAlign
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. <Leader>aip)
+nmap <Leader>a <Plug>(EasyAlign)
+
 "===========================================================================
 " Functions
 "===========================================================================
