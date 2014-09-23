@@ -43,6 +43,8 @@ plugin list:
     * display tags of a file ordered by scope
 17. [ack.vim](https://github.com/mileszs/ack.vim)
     * vim plugin for the Perl module / CLI script 'ack'
+18. [vim-easy-align](https://github.com/junegunn/vim-easy-align)
+    * simple, easy-to-use vim alignment plugin
 
 plugins in beta:
 
