@@ -17,7 +17,6 @@ if __name__ == '__main__':
         except ImportError:
             print 'No such module named %s' % name
         except TypeError:
-            module = __import__(name)
             if hasattr(module, '__path__') and module.__path__:
                 print module.__path__[0]
             elif hasattr(module, '__file__'):
