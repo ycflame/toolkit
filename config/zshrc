@@ -10,3 +10,11 @@ alias 'squash'='/bin/rm -rf ~/.trash/*'
 alias '..'='cd ..'
 alias '...'='cd ../..'
 autoload -U compinit && compinit -u
+
+function goto() {
+    PYPATH=$(py-module-path $1)
+    echo $PYPATH
+    if [ -d $PYPATH ];then
+        cd $PYPATH
+    fi
+}
