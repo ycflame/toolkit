@@ -3,6 +3,7 @@
 	email = yangchao.cs@gmail.com
 
 [alias]
+    up = add -u :/
     co = checkout
     ci = commit
     st = status -uno
