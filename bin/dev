@@ -1,0 +1,47 @@
+#!/usr/bin/expect
+#使用expect登陆服务器脚本
+#dongweiming 2013.04.02
+#modified by ggarlic
+
+trap {
+ set rows [stty rows]
+ set cols [stty columns]
+ stty rows $rows columns $cols < $spawn_out(slave,name)
+} WINCH
+
+set timeout 6
+set server [lindex $argv 0]
+set port [lindex $argv 1]
+set password "Linux-3.0"
+#set tbjpass YOURPASSWORD
+
+if {$port==""} {
+    set port 22
+}
+
+if {$argc>3} {
+    puts stderr "参数错误,请使用以下格式: $argv0 [服务器简称,比如8 ] [端口]"
+    exit 1
+}
+
+if {$server=="balin"} {
+    spawn ssh yangchao@balin.intra.douban.com
+    expect "Password:"
+    send "$password\n"
+    interact
+} elseif {$server=="fili"} {
+    spawn ssh yangchao@fili.intra.douban.com
+    expect "Password:"
+    send "$password\n"
+    interact
+} elseif {$server=="theoden"} {
+    spawn ssh yangchao@theoden.intra.douban.com
+    expect "Password:"
+    send "$password\n"
+    interact
+} else {
+    spawn ssh yangchao@doubandev2.intra.douban.com
+    expect "Password:"
+    send "$password\n"
+    interact
+}
