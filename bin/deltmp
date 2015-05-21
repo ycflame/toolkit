@@ -2,7 +2,6 @@
 
 DEL_LIST=[
     r'.*\.pyc$',
-    r'.*\.bak$',
     r'.*\.swp$',
 ]
 
