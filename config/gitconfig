@@ -3,6 +3,8 @@
 	email = yangchao.cs@gmail.com
 
 [alias]
+    la = pull origin master
+    he = rebase -i master
     up = add -u :/
     co = checkout
     ci = commit
