@@ -57,6 +57,7 @@ augroup END
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 augroup DeleteTrailing
     autocmd BufWrite *.py :call DeleteTrailingWS()
+    autocmd BufWrite *.html :call DeleteTrailingWS()
     autocmd BufWrite *.coffee :call DeleteTrailingWS()
 augroup END
 
