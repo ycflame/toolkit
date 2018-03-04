@@ -203,6 +203,8 @@ func! RunSrc()
         exec "!astyle --style=gnu --suffix=none %"
     elseif &filetype == 'py'||&filetype == 'python'
         exec "!python %"
+    elseif &filetype == 'go'
+        exec "!go run %"
     elseif &filetype == 'java'
         exec "!astyle --style=java --suffix=none %"
     endif
