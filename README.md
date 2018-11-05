@@ -4,7 +4,7 @@ My toolkit including dotfiles, plugins and scripts.
 ```
 git clone https://github.com/ycflame/toolkit.git
 cd toolkit
-./install
+./install.sh
 ```
 
 plugin list:
