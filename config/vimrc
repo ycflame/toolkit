@@ -49,6 +49,8 @@ set ignorecase      " Case-insensitive search
 set smartcase       " Case-sensitive search if any caps
 set hls             " Highlight searched text
 
+set wildignorecase  " Case-insensitive path completion
+
 " Return to last edit position when opening files (You want this!)
 augroup RememberPosition
     autocmd BufReadPost *
