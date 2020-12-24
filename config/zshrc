@@ -1,4 +1,4 @@
-plugins=(git, github, git-remote-branch, osx)
+plugins=(git github osx)
 
 source $ZSH/oh-my-zsh.sh
 
