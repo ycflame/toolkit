@@ -58,3 +58,12 @@
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "vim/bundle/typescript-vim"]
+	path = vim/bundle/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "vim/bundle/vim-jsx-pretty"]
+	path = vim/bundle/vim-jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
